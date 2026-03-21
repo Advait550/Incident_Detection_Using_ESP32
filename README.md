@@ -82,7 +82,7 @@ Location: https://maps.google.com/?q=LATITUDE,LONGITUDE
 
 Implementation Highlights:
 
-I2C communication with MPU6050
+ICC communication with MPU6050
 
 UART communication with GPS module
 
