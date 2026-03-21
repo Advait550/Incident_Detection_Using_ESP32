@@ -1,0 +1,23 @@
+#include <Wire.h>
+const int scl = 22 , sda = 21;
+byte address = 1, error;
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(115200);
+  Serial.println("Hello, ESP32!");
+  Wire.begin(sda,scl);
+  while(address <= 127){
+    Wire.beginTransmission(address);
+    error = Wire.endTransmission();
+    if(!error){
+      Serial.print("Found at : 0x");
+      Serial.println(address , HEX);  
+    }
+    address++;
+  }
+}
+
+void loop() {
+  
+  delay(5000); // this speeds up the simulation
+}
