@@ -33,7 +33,7 @@ SIM800L GSM Module
 
 Power Supply System
 
-⚙️ Working Principle
+⚙️ Working Principle <br>
 🔹 Incident Detection Logic
 
 MPU6050 continuously reads:
